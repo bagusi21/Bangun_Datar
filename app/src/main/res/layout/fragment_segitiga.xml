@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:context=".SegitigaFragment">
+
+                <EditText
+                    android:id="@+id/e_alas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:hint="@string/input_alas"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/e_tinggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:hint="@string/input_tinggi"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="@+id/e_alas"
+                    app:layout_constraintStart_toStartOf="@+id/e_alas"
+                    app:layout_constraintTop_toBottomOf="@+id/e_alas" />
+
+                <Button
+                    android:id="@+id/hitung2_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/hitung"
+                    app:layout_constraintStart_toStartOf="@+id/e_tinggi"
+                    app:layout_constraintTop_toBottomOf="@+id/e_tinggi" />
+
+                <Button
+                    android:id="@+id/reset2_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/reset"
+                    app:layout_constraintBottom_toBottomOf="@+id/hitung2_btn"
+                    app:layout_constraintEnd_toEndOf="@+id/e_tinggi"
+                    app:layout_constraintTop_toTopOf="@+id/hitung2_btn" />
+
+                <TextView
+                    android:id="@+id/textView_luas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/luas"
+                    android:textSize="16sp"
+                    android:layout_marginTop="48dp"
+                    app:layout_constraintStart_toStartOf="@+id/e_tinggi"
+                    app:layout_constraintTop_toBottomOf="@+id/hitung2_btn" />
+
+                <TextView
+                    android:id="@+id/textView_kel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/kel"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView_luas"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_luas" />
+
+                <Button
+                    android:id="@+id/share2_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="@string/share"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/reset2_btn"
+                    app:layout_constraintStart_toEndOf="@+id/hitung2_btn"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_kel" />
+
+                <TextView
+                    android:id="@+id/tv_id_luassgt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_luas"
+                    app:layout_constraintStart_toEndOf="@+id/textView_luas"
+                    app:layout_constraintTop_toTopOf="@+id/textView_luas" />
+
+                <TextView
+                    android:id="@+id/tv_id_kelsgt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_kel"
+                    app:layout_constraintStart_toEndOf="@+id/textView_kel"
+                    app:layout_constraintTop_toTopOf="@+id/textView_kel" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

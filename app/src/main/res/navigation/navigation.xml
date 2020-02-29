@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="orgd3if0060.bangundatar.StartFragment"
+        android:label="Bangun Datar"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_persegiFragment"
+            app:destination="@id/persegiFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_segitigaFragment"
+            app:destination="@id/segitigaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/persegiFragment"
+        android:name="orgd3if0060.bangundatar.PersegiFragment"
+        android:label="@string/persegi_panjang"
+        tools:layout="@layout/fragment_persegi" />
+    <fragment
+        android:id="@+id/segitigaFragment"
+        android:name="orgd3if0060.bangundatar.SegitigaFragment"
+        android:label="@string/segitiga"
+        tools:layout="@layout/fragment_segitiga" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="orgd3if0060.bangundatar.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about"/>
+</navigation>

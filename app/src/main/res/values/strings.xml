@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Bangun Datar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="persegi_panjang">Persegi Panjang</string>
+    <string name="segitiga">Segitiga</string>
+    <string name="input_panjang">Masukkan Panjang</string>
+    <string name="input_lebar">Masukkan Lebar</string>
+    <string name="hitung">Hitung</string>
+    <string name="reset">Reset</string>
+    <string name="luas">Luas =</string>
+    <string name="kel">Keliling = </string>
+    <string name="share">Share</string>
+    <string name="input_alas">Masukkan alas</string>
+    <string name="input_tinggi">Masukkan tinggi</string>
+    <string name="nama">Muhammad Bagus Izzan Muafy</string>
+    <string name="nim">6706180060</string>
+    <string name="kelas">D3IF-4204</string>
+    <string name="about">About</string>
+</resources>
